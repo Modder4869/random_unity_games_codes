@@ -5,3 +5,4 @@ chatgpt or similiar used because cba write same redundant lines again
 those games are included in [AssetStudioFork](https://github.com/Modder4869/StudioDev/)
 - Sonic Rumble
 - Latale M (永恒岛)
+- GOZ (jp.co.toho.godzillabattleline)
