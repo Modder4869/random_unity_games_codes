@@ -6,3 +6,4 @@ those games are included in [AssetStudioFork](https://github.com/Modder4869/Stud
 - Sonic Rumble
 - Latale M (永恒岛)
 - GOZ (jp.co.toho.godzillabattleline)
+- Metallopus
