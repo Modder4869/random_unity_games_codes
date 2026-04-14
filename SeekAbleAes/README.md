@@ -7,3 +7,4 @@
 - jp.co.takaratomy.beyblade `IKA9ntCrypto.CLI.exe "input_folder" "output_folder" "179acfb4-8070-470a-94df-d6d0475ee0a9" --key_size 128
  --derive PBKDF1`
 - The Fox's Way Home `IKA9ntCrypto.CLI.exe "input" "output" "The Fox's Way Home" --derive PBKDF1 --key_size 128`
+- com.klab.bleach.puzzle `IKA9ntCrypto.CLI.exe "input" "output" "passwork" --derive PBKDF1 --key_size 128`
