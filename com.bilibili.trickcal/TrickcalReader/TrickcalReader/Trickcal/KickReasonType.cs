@@ -1,0 +1,30 @@
+namespace Trickcal.Shared;
+
+public enum KickReasonType : int {
+    None = 0,
+    Unknown = 1,
+    InvalidOperation = 2,
+    NewSessionCreated = 3,
+    NoResponse = 4,
+    GmKick = 5,
+    ServerClosed = 6,
+    ServerChangeRequired = 7,
+    AppUpdateRequired = 8,
+    BundleUpdateRequired = 14,
+    ServerMaintenance = 9,
+    VersionCheckFailed = 10,
+    AuthFailed = 11,
+    AuthenticationRequired = 12,
+    LowerProtocolVersion = 13,
+    GmKickWithAppExit = 15,
+    Ban = 17,
+    DeleteAccount = 18,
+    SessionNotFound = 19,
+    NetworkChanged = 20,
+    CustomDisconnect = 16,
+    LoginRequired = 21,
+    PacketResendFailed = 22,
+    ServerLoad = 100,
+    TableChanged = 101,
+    HotfixChanged = 102
+}

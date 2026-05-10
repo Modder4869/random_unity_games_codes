@@ -1,0 +1,39 @@
+using MessagePack;
+
+namespace Trickcal.Shared;
+
+[MessagePackObject]
+public class WebLinkEventOperationData {
+    [Key(0)]
+    public int DataId { get; set; }
+    [Key(1)]
+    public bool Enable { get; set; }
+    [Key(2)]
+    public bool IsAlways { get; set; }
+    [Key(3)]
+    public DateTime StartTime { get; set; }
+    [Key(4)]
+    public DateTime EndTime { get; set; }
+    [Key(5)]
+    public bool Banner { get; set; }
+    [Key(6)]
+    public int Sort { get; set; }
+    [Key(7)]
+    public DateTime RealStartTime { get; set; }
+    [Key(8)]
+    public DateTime RealEndTime { get; set; }
+    [Key(9)]
+    public DateTime AddLimitTime { get; set; }
+    [Key(10)]
+    public string Name { get; set; }
+    [Key(11)]
+    public string WebLinkUrl { get; set; }
+    [Key(12)]
+    public string BannerTitle { get; set; }
+    [Key(13)]
+    public string BannerBg { get; set; }
+    [Key(14)]
+    public int ItemId { get; set; }
+    [Key(15)]
+    public int ItemCount { get; set; }
+}

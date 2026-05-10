@@ -1,0 +1,32 @@
+namespace Trickcal.Shared;
+
+public enum Target : int {
+    None = 0,
+    AllAlly = 1,
+    AllEnemy = 2,
+    ClosestEnemy = 3,
+    ClosestEnemy_X = 4,
+    FarthestEnemy = 5,
+    FarthestEnemy_X = 6,
+    HighestAttackAlly = 7,
+    HighestAttackEnemy = 8,
+    HighestDefenseAlly = 9,
+    HighestDefenseEnemy = 10,
+    HighestHpPercentAlly = 11,
+    HighestHpPercentEnemy = 12,
+    LowestHpPercentAlly = 13,
+    LowestHpPercentEnemy = 14,
+    LowestSpPercentAlly = 15,
+    LowestSpPercentEnemy = 16,
+    RandomEnemy = 17,
+    RandomAlly = 18,
+    Self = 19,
+    ClosestAlly = 20,
+    FarthestAlly = 21,
+    LowestHpAlly = 22,
+    LowestHpEnemy = 23,
+    HighestMaxHpAlly = 24,
+    HighestMaxHpEnemy = 25,
+    AllChildMinion = 26,
+    Maintain = 27
+}

@@ -1,0 +1,17 @@
+using MessagePack;
+
+namespace Trickcal.Shared;
+
+[MessagePackObject]
+public class ScoreEventData : TableItem<TableData> {
+    [Key(0)]
+    public int Uid { get; set; }
+    [Key(1)]
+    public int Group { get; set; }
+    [Key(2)]
+    public ScoreEventType Type { get; set; }
+    [Key(3)]
+    public int Value { get; set; }
+    [Key(4)]
+    public int Score { get; set; }
+}

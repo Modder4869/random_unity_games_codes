@@ -8,3 +8,5 @@
  --derive PBKDF1`
 - The Fox's Way Home `IKA9ntCrypto.CLI.exe "input" "output" "The Fox's Way Home" --derive PBKDF1 --key_size 128`
 - com.klab.bleach.puzzle `IKA9ntCrypto.CLI.exe "input" "output" "passwork" --derive PBKDF1 --key_size 128`
+- jp.co.drecom.wizardry.daphne `IKA9ntCrypto.CLI.exe "input" "output" "M3kR9/aq9W" --derive PBKDF1 --key_size 128`
+- com.GameCoaster.DungeonWithin `IKA9ntCrypto.CLI.exe "input" "output" "M3kR9/aq9W" --derive PBKDF1 --key_size 128`, modify code and set salt to `DUNGEONWITHIN_SECURE_KEY`

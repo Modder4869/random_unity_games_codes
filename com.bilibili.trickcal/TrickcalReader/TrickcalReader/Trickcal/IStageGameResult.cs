@@ -1,0 +1,32 @@
+using MessagePack;
+
+namespace Trickcal.Shared;
+
+[Union(0, typeof(StageSelectBattleEventAsideGameResult))]
+[Union(1, typeof(StageSelectBattleEventAuthorityGameResult))]
+[Union(2, typeof(StageSelectBattleEventGoldGameResult))]
+[Union(3, typeof(StageSelectBattleEventLevelUpGameResult))]
+[Union(4, typeof(StageSelectBattleEventMaxPartyGameResult))]
+[Union(5, typeof(StageSelectBattleEventNormalGameResult))]
+[Union(6, typeof(StageSelectBattleEventUserSkillGameResult))]
+[Union(7, typeof(StageSoloRaidGameResult))]
+[Union(8, typeof(NormalStageSoloEndGameResult))]
+[Union(9, typeof(BossStageSoloEndGameResult))]
+[Union(10, typeof(StageStoryGameResult))]
+[Union(11, typeof(StageTutorialGameResult))]
+[Union(12, typeof(StageThemeEventGameResult))]
+[Union(13, typeof(StageTowerGameResult))]
+[Union(14, typeof(StageTrickcalRankGameResult))]
+[Union(15, typeof(StageUserSkillAsideChallengeGameResult))]
+[Union(16, typeof(StageUserSkillChallengeGameResult))]
+[Union(17, typeof(StageModeBasicGameResult))]
+[Union(18, typeof(StageAreaChallengeGameResult))]
+[Union(19, typeof(StageAsideGameResult))]
+[Union(20, typeof(StageAugmentChallengeGameResult))]
+[Union(21, typeof(StageChaosArenaGameResult))]
+[Union(22, typeof(StageGlobalBattleEventAreaGameResult))]
+[Union(23, typeof(StageGlobalBattleEventBossGameResult))]
+[Union(24, typeof(StagePvpArenaGameResult))]
+[Union(25, typeof(StageQuestGameResult))]
+[Union(26, typeof(StageRerunGameResult))]
+public interface IStageGameResult {}
