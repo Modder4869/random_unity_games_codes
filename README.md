@@ -7,3 +7,4 @@ those games are included in [AssetStudioFork](https://github.com/Modder4869/Stud
 - Latale M (永恒岛)
 - GOZ (jp.co.toho.godzillabattleline)
 - Metallopus
+- WildRift
