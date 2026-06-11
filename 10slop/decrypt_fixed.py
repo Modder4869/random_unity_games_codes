@@ -200,6 +200,7 @@ def main():
         print(f"  XOR key: 0x{(args.section_id >> 16) & 0xFF:02X}")
 
         section_data = bytes(data[foff : foff + size])
+        
         data[foff : foff + size] = decrypt_section(section_data, args.section_id, vaddr)
 
         # Show decrypted AES region preview
@@ -215,6 +216,7 @@ def main():
             xor_end = min(xor_start + 0x80, foff + size)
             xor_region = data[xor_start:xor_end]
             print(f"  XOR region preview (offset 0x10000 after skip):")
+            print(f"xor start {xor_start} {xor_region[:256].hex()}")
             hexdump(bytes(xor_region), offset=0)
         print()
 
