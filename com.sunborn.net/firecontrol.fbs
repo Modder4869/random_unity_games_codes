@@ -1,0 +1,82 @@
+enum SubpackageBundleDownLoadTypeFB : int8 {
+	Manual = 0,
+	Auto = 1
+}
+
+enum ChunkCompressMethodFB : int8 {
+	None = 0,
+	Lzma = 1,
+	Zip = 2
+}
+
+table AssetMapBundleFB {
+	h2b: [AssetHashMapBundleFB]; // index 0x0
+	p2b: [AssetPathMapBundleFB]; // index 0x1
+}
+
+table AssetHashMapBundleFB {
+	hash: uint; // index 0x0
+	bundle: string; // index 0x1
+}
+
+table AssetPathMapBundleFB {
+	path: string; // index 0x0
+	bundle: string; // index 0x1
+}
+
+table Bundle2AtlasListFB {
+	b2a: [Bundle2AtlasFB]; // index 0x0
+}
+
+table Bundle2AtlasFB {
+	bundle: string; // index 0x0
+	atlas: [string]; // index 0x1
+}
+
+table CheckSumInfosFB {
+	infos: [CheckSumInfoFB]; // index 0x0
+}
+
+table CheckSumInfoFB {
+	relative_path: string; // index 0x0
+	c_rc32: int; // index 0x1
+	md5: string; // index 0x2
+	is_bundle: bool; // index 0x3
+}
+
+table SubpackageFileInChunkInfoFB {
+	name: string; // index 0x0
+	crc32: int; // index 0x1
+	chunk_name: string; // index 0x2
+	size: uint; // index 0x3
+	offset_chunk: uint; // index 0x4
+	md5: string; // index 0x5
+	bundle_down_load_type: SubpackageBundleDownLoadTypeFB; // index 0x6
+	necessary: bool; // index 0x7
+	is_bundle: bool; // index 0x8
+}
+
+table SubpackageChunkInfoFB {
+	tag: string; // index 0x0
+	file_name: string; // index 0x1
+	crc32: int; // index 0x2
+	md5: string; // index 0x3
+	file_size: uint; // index 0x4
+	compress_method: ChunkCompressMethodFB; // index 0x5
+	chunk_files: [SubpackageFileInChunkInfoFB]; // index 0x6
+}
+
+table SubpackageTagDepedentFB {
+	tag: string; // index 0x0
+	dependent_tags: [string]; // index 0x1
+}
+
+table SubpackageInfoFB {
+	chunks: [SubpackageChunkInfoFB]; // index 0x0
+	tag_dependent: [SubpackageTagDepedentFB]; // index 0x1
+}
+
+table UnloadbleAssetBundle {
+	bundles: [string]; // index 0x0
+}
+
